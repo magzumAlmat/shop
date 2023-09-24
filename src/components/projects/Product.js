@@ -210,12 +210,12 @@ class Product extends Component {
             horizontal: 'left'
           }}
           open={this.state.open}
-          autoHideDuration={2000}
+          autoHideDuration={3000}
           onClose={this.handleClose}
           ContentProps={{
             'aria-describedby': 'message-id'
           }}
-          message={<span id="message-id">Item added!</span>}
+          message={<span id="message-id">Добавлено в корзину!</span>}
           action={[
             <IconButton
               key="close"

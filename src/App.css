@@ -7,6 +7,10 @@ body {
 
 }
 
+a:hover {
+  color: #000000f5;
+  text-decoration: underline;
+}
 .btn-main {
   color: #fff;
   background: transparent;

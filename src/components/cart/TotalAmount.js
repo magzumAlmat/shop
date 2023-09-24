@@ -24,12 +24,12 @@ class TotalAmount extends Component {
     return (
       <div className="total-amount">
         <p>
-          <strong>Delivery</strong>
-          <span>Free</span>
+          <strong>Доставка</strong>
+          <span>Бесплатно</span>
         </p>
         <p>
-          <strong>Total</strong>
-          {totalPrice} Т
+          <strong>Итог</strong>
+          {totalPrice} ₸
         </p>
         <div className="text-center">
         </div>

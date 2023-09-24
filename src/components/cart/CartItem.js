@@ -75,7 +75,7 @@ class CartItem extends Component {
         <h4 className="name">{item.name}</h4>
         <div className="quantity">
           <p>
-            Quantity:{' '}
+            Количество:{' '}
             <button
               className="btn subtract"
               onClick={this.decrement.bind(this, item.id)}

@@ -14,11 +14,11 @@ export default class PassOrder extends Component {
              {console.log('вывод с PASS ORDER-----',this.props.prod)}
              <Link to={{pathname:"/createorder",params:Greeting}} className='button' >
                 
-             <button 
+             <button className='btn btn-primary' 
             //  onClick={
             //  this.props.location.params.cartItems=[]//обнулил корзину  
             // }
-            >Создать заказ</button> 
+            >Оформить заказ</button> 
              
              </Link>
 

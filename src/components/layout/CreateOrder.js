@@ -287,7 +287,7 @@ class CreateOrder extends Component {
             <CustomSelect options={options}  onChange={onChangeInput} required={true}/> 
 
             <div className="input-field">
-                        <button className="btn pink lighten-1 z-depth-0">Create order</button>
+                        <button className="btn btn-primary lighten-1 z-depth-0">Создать заказ</button>
                     </div> 
             </form>
 

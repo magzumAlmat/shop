@@ -82,6 +82,7 @@ let productFilteredByPriceArr=[]
 class Products extends Component {
     constructor(props) {
         super(props);
+    
     this.state = {
         pageSize: 6,
         currentPage: 1,
@@ -102,11 +103,11 @@ class Products extends Component {
     
     // this.toggle = this.toggle.bind(this);
 }
-// toggle() {
-//     this.setState({
-//       isOpen: !this.state.isOpen
-//     });
-//   }
+    // toggle() {
+    //     this.setState({
+    //       isOpen: !this.state.isOpen
+    //     });
+    //   }
 
     changeCurrentPage = numPage => {
         this.setState({currentPage: numPage});
@@ -117,10 +118,6 @@ class Products extends Component {
     componentWillReceiveProps(nextProps) {
         this.setState({products: nextProps.products});
         // console.log('Я отработался при рендере NextProps', nextProps)
-      
-
-
-
     }
 
     // onChangePage = (pageOfItems) => this.setState({ pageOfItems: pageOfItems });
@@ -129,14 +126,9 @@ class Products extends Component {
     selectCategory = (e, props, state) => {
         this.state.pickedSize='all'
         // console.log('im in selectCategory  func   e=  ', e.target.value);
-
-
         // console.log('im in selectCategory  func  pickedCATEGORY is', this.state.pickedCategory)
-
         this.setState({pickedCategory: e.target.value});
         // console.log('im in selectCategory  func  pickedCATEGORY after setState is', this.state.pickedCategory)
-
-
         // this.setState({
         // pickedCategory: ''
         // });
@@ -153,7 +145,6 @@ class Products extends Component {
 
         // this.getFilteredProducts(this.state.pickedSize)
 
-
         // this.setState({
         // pickedCategory: ''
         // });
@@ -162,15 +153,12 @@ class Products extends Component {
     selectSize = (e, props, state) => {
         
         console.log('!!!  im in SelectSize func   e=  ', e.target.value);
-
-
         // console.log('im in SelectSize func  is', this.state.pickedSize)
 
         this.setState({pickedSize: e.target.value});
         console.log('im in selectSize  func  after setState is', this.state.pickedSize)
 
         // this.getFilteredProducts(this.state.pickedSize)
-
 
         // this.setState({
         // pickedCategory: ''
@@ -213,12 +201,6 @@ class Products extends Component {
 
     //       if (filtered.length === 0) return null;
     //     })
-
-  
-
-
-  
-  
 
     getFilteredProducts(pickedCategory,props) {
         console.log('im in getFiltereProducts--  pickedSize= ',typeof(this.state.pickedSize),this.state.pickedSize)
@@ -273,7 +255,7 @@ class Products extends Component {
             
 
 
-             console.log('buffer= ',buffer ,'this.state.pickedCategory.toString() = ',this.state.pickedCategory.toString() )
+            console.log('buffer= ',buffer ,'this.state.pickedCategory.toString() = ',this.state.pickedCategory.toString() )
             console.log('buffer2= ',buffer2 ,'tthis.state.pickedSize.toString() = ',this.state.pickedSize.toString() )
             console.log('buffer3= ',typeof(buffer3 ),buffer3 )
             console.log('this.state.pickedCategory.toString()= ',this.state.pickedCategory.toString())
@@ -631,10 +613,10 @@ class Products extends Component {
                                 </div> ))} 
                         </ul>
                         </Nav>
-                        <h6>Пол</h6>
+                        {/* <h6>Пол</h6> */}
                         <br />
 
-                        <Nav onClick={
+                        {/* <Nav onClick={
                             this.selectSex
                         }  >            
 
@@ -661,7 +643,7 @@ class Products extends Component {
                                 </ul>
                                 </div> ))} 
                         </ul>
-                        </Nav>
+                        </Nav> */}
                         
 
 
