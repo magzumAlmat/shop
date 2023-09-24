@@ -165,42 +165,6 @@ class Products extends Component {
         // });
     };
 
-    // getFilteredProducts(pickedCategory) {
-    // console.log('Я внутри getFilteredProduycts------------------------------------------')
-    // console.log(' '  ,this.state.pickedCategory)
-
-    // const filter = this.props.filter;
-
-    // console.log(this.state.pageOfItems)
-
-    // // console.log('------------------------------------------')
-    // // console.log('вывод ',(this.state.pageOfItems))
-    // // console.log('------------------------------------------')
-
-    // const filteredProducts = this.state.pageOfItems.map(obj => {
-    // const filtered = Object.values(obj.Category.value)
-    //       let concatedArray=[]
-    //       let buffer=''
-    //       // console.log('Filtered до цикла  ', filtered)
-
-    //       if (!filtered==null){
-    //         console.log('filtered is null', filtered)
-
-    //       }
-    //       else{ buffer = filtered.join('')}
-
-    //       concatedArray.push(buffer,obj)
-
-    //       // console.log('buffer ',buffer)
-    //       // console.log('obj',obj)
-
-    //       console.log('  pickedCategory  ---- ', this.state.pickedCategory)
-    //       if (buffer===this.state.pickedCategory.toString()){
-    //         this.state.newArray.push(concatedArray[1])
-    //         console.log('GG '  ,this.state.newArray)}
-
-    //       if (filtered.length === 0) return null;
-    //     })
 
     getFilteredProducts(pickedCategory,props) {
         console.log('im in getFiltereProducts--  pickedSize= ',typeof(this.state.pickedSize),this.state.pickedSize)
@@ -225,23 +189,24 @@ class Products extends Component {
 
         const filteredProducts = this.state.products.map((obj) => {
             console.log('OBJ= ',obj)
-            const filtered = Object.values(obj.Category.value);
-            const filteredSizes = Object.values(obj.sizes.label);
-            const filteredSex = Object.values(obj.sex.value);
-            
-            // console.log('filteredSizes= ',filteredSizes)
-            let concatedArray = [];
-            let buffer = "";
-            let buffer2 = "";
-            let buffer3 = "";
-            
-            // console.log('Filtered до цикла  ', filtered)
-            buffer = filtered.join("");
-            buffer2=filteredSizes.join("")
-            buffer3=filteredSex.join("")
-            // console.log('buffer3 = ', buffer3)
-            concatedArray.push(buffer, obj,buffer2,buffer3);
-        
+            if (obj.Category && obj.Category.value && obj.sizes && obj.sizes.label && obj.sex && obj.sex.value) {
+                const filtered = Object.values(obj.Category.value);
+                const filteredSizes = Object.values(obj.sizes.label);
+                // const filteredSex = Object.values(obj.sex.value);
+                
+                // console.log('filteredSizes= ',filteredSizes)
+                let concatedArray = [];
+                let buffer = "";
+                let buffer2 = "";
+                let buffer3 = "";
+                
+                // console.log('Filtered до цикла  ', filtered)
+                buffer = filtered.join("");
+                buffer2=filteredSizes.join("")
+                buffer3=filteredSex.join("")
+                // console.log('buffer3 = ', buffer3)
+                concatedArray.push(buffer, obj,buffer2,buffer3);
+           
 
             // console.log('CONCATED ARRAY=  ', concatedArray)
             // console.log('obj', obj)
@@ -292,7 +257,7 @@ class Products extends Component {
             //   console.log('YES!',this.state.newArray)
           
            
-
+        }
 
             // if (newArray.length === 0) return <p>Выберите категорию товара</p>;
         }
