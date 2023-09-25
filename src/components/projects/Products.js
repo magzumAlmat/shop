@@ -440,7 +440,7 @@ class Products extends Component {
                         />
                         </Row>
                      
-                        <Row >
+                        {/* <Row >
                         <Col >
                             <InputGroup>
                             <InputNumber
@@ -463,7 +463,7 @@ class Products extends Component {
                         </Col>
                     
                       
-                        </Row>
+                        </Row> */}
                         </div>
                         {/* --------------------------------------------------------------------------------- */}
                         <hr id='hideOnMobile'/>
