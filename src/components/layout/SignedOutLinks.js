@@ -10,9 +10,9 @@ const SignedOutLinks = () => {
             {/* <li>
                 <NavLink to="/signup">РЕГИСТРАЦИЯ</NavLink>
             </li> */}
-            <li>
+            {/* <li>
                 <NavLink to="/signin">ВОЙТИ</NavLink>
-            </li>
+            </li> */}
             {/* <li>
                 <NavLink to="/"> Projects</NavLink>
             </li> */}
