@@ -354,16 +354,16 @@ class CreateProject extends Component {
                 
                 <form className="white" onSubmit={this.handleSubmit}>
                   
-                    <h5 className="grey-text text-darken-3">Create New Project</h5>
+                    
                     <div >
-                        <label htmlFor="Category">Category</label>
+                        <label htmlFor="Category">Категория</label>
                         {/* <Select options={colourOptions} type="text" id="Category" onChange={this.handleChange} /> */}
                         <CustomSelect options={options}  onChange={this.onChangeInput} /> 
                     </div>
                     <br/>
                     <br/>
                     <div className="input-field">
-                        <label htmlFor="title">Title</label>
+                        <label htmlFor="title">Заголовок</label>
                         <input type="text" id="title" onChange={this.handleChange} />
                     </div>
                     
@@ -371,7 +371,7 @@ class CreateProject extends Component {
                     <br/>
                     
                     <div className="input-field">
-                        <label htmlFor="content">Project Content</label>
+                        <label htmlFor="content">Доп информация</label>
                         <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
                     </div>
 
@@ -399,7 +399,7 @@ class CreateProject extends Component {
                     
 
                     <div className="input-field">
-                        <label htmlFor="name">name</label>
+                        <label htmlFor="name">Наименование</label>
                         <input type="text" id="name" onChange={this.handleChange} />
                     </div>
                     
@@ -407,7 +407,7 @@ class CreateProject extends Component {
                     <br/>
 
                     <div className="input-field">
-                        <label htmlFor="price">price</label>
+                        <label htmlFor="price">Стоимость</label>
                         <input type="number" id="price" onChange={this.handleChange} />
                     </div>
                     
@@ -441,9 +441,9 @@ class CreateProject extends Component {
                     <br />
                     <br/>
                     <div className="input-field">
-                      <label htmlFor="defaultQty">Add Sex</label>
+                      <label htmlFor="defaultQty">Выберите пол</label>
                       <div >
-                        <label htmlFor="Category">Select sex</label>
+                        <label htmlFor="Category">Выбрать</label>
                         {/* <Select options={colourOptions} type="text" id="Category" onChange={this.handleChange} /> */}
                         <CustomSelect options={sex}   onChange={this.onChangeSexInput} /> 
                     </div>
@@ -451,16 +451,16 @@ class CreateProject extends Component {
                   <br />
                   <br/>
                   <div className="input-field">
-                      <label htmlFor="defaultQty">Add Size</label>
+                      <label htmlFor="defaultQty">Выберите размер</label>
                       <div >
-                        <label htmlFor="Category">Select Size</label>
+                        <label htmlFor="Category">Выбрать</label>
                         {/* <Select options={colourOptions} type="text" id="Category" onChange={this.handleChange} /> */}
                         <CustomSelect options={sizes}   onChange={this.onChangeSizeInput} /> 
                     </div>
                   </div>
 
                     <div className="input-field">
-                        <label htmlFor="defaultQty">default qty</label>
+                        <label htmlFor="defaultQty">Количество на складе</label>
                         <input type="number" id="defaultQty" onChange={this.handleChange} />
                     </div>
 
@@ -469,7 +469,7 @@ class CreateProject extends Component {
                     <br/>
                     
                     <div className="input-field">
-                        <button className="btn pink lighten-1 z-depth-0" >Create Project</button>
+                        <button className="btn pink lighten-1 z-depth-0" >Добавить</button>
                     </div>
 
 

@@ -25,9 +25,9 @@ class SignedInLinks extends Component{
                     <NavLink to="/createproduct">ДОБАВИТЬ ТОВАР</NavLink>
                 </li>
 
-                <li>
+                {/* <li>
                     <NavLink to="/sklad">СКЛАД</NavLink>
-                </li>
+                </li> */}
                 {/* <li>
                     <SearchInput />
                 </li> */}

@@ -7,9 +7,9 @@ const SignedOutLinks = () => {
              <li>
                 <NavLink to="/">ТОВАРЫ</NavLink>
             </li>
-            <li>
+            {/* <li>
                 <NavLink to="/signup">РЕГИСТРАЦИЯ</NavLink>
-            </li>
+            </li> */}
             <li>
                 <NavLink to="/signin">ВОЙТИ</NavLink>
             </li>
