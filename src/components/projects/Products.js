@@ -203,9 +203,9 @@ class Products extends Component {
                 // console.log('Filtered до цикла  ', filtered)
                 buffer = filtered.join("");
                 buffer2=filteredSizes.join("")
-                buffer3=filteredSex.join("")
+                // buffer3=filteredSex.join("")
                 // console.log('buffer3 = ', buffer3)
-                concatedArray.push(buffer, obj,buffer2,buffer3);
+                concatedArray.push(buffer, obj,buffer2);
            
 
             // console.log('CONCATED ARRAY=  ', concatedArray)
@@ -222,7 +222,7 @@ class Products extends Component {
 
             console.log('buffer= ',buffer ,'this.state.pickedCategory.toString() = ',this.state.pickedCategory.toString() )
             console.log('buffer2= ',buffer2 ,'tthis.state.pickedSize.toString() = ',this.state.pickedSize.toString() )
-            console.log('buffer3= ',typeof(buffer3 ),buffer3 )
+            // console.log('buffer3= ',typeof(buffer3 ),buffer3 )
             console.log('this.state.pickedCategory.toString()= ',this.state.pickedCategory.toString())
             console.log('this.state.pickedSize.toString()= ',this.state.pickedSize.toString())
             console.log('this.state.pickedSex.toString(),= ',this.state.pickedSex.toString())
